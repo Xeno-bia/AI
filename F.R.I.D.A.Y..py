@@ -21,8 +21,7 @@ while True:
         wd = ["月", "火", "水", "木", "金", "土", "日"]
         print(f"\nF.R.I.D.A.Y.:今日は、{dt.year}年{dt.month}月{dt.day}日{wd[dt.weekday()]}曜日です。")
 
-    elif x == "今は何時？":
-        dt = datetime.datetime.now()
+    elif (("今" in x) or ("現在" in x)) and (("何時" in x) or ("時刻" in x)):
         print(f"\nF.R.I.D.A.Y.:現在の時刻は、{dt.hour}時{dt.minute}分{dt.second}秒です。")
 
 """
